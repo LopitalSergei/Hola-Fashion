@@ -1,0 +1,30 @@
+// Обнуление
+@import "nullstyle.scss";
+
+// Шрифты
+@import "fonts.scss";
+
+body {
+}
+
+[class*="__container"] {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper {
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+// Шапка
+@import "header.scss";
+
+// Контент
+@import "main.scss";
+
+// Footer
+@import "footer.scss";
