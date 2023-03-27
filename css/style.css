@@ -94,7 +94,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1140px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -239,4 +239,98 @@ body {
     color: #91916c;
     text-decoration: underline;
   }
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 49px;
+}
+.main__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 544px;
+          flex: 0 0 544px;
+  position: relative;
+  left: -160px;
+  z-index: -1;
+}
+.main__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 640px;
+          flex: 0 1 640px;
+  margin-left: -64px;
+}
+.main__text {
+  max-width: 610px;
+  padding-top: 76px;
+}
+.main__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.39;
+  /* or 78px */
+  letter-spacing: 0.02em;
+  color: #e5a985;
+  padding-bottom: 39px;
+}
+.main__subtitle {
+  font-size: 24px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: #4a4747;
+  padding-bottom: 67px;
+}
+.main__input {
+  width: 465px;
+  height: 58px;
+  background-color: #e5e5e5;
+  border-radius: 8px 0px 0px 8px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  padding-left: 30px;
+}
+.main__input::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+.main__input::-moz-placeholder {
+  color: #c4c4c4;
+}
+.main__input:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+.main__input::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+.main__input::placeholder {
+  color: #c4c4c4;
+}
+.main__button {
+  position: absolute;
+  width: 160px;
+  height: 58px;
+  background-color: #91916c;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.main__button:hover {
+  background-color: #e5a985;
 }
