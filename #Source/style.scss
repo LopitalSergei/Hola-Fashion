@@ -3,17 +3,24 @@
 
 // Шрифты
 @import "fonts.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap");
 
 body {
+	font-family: "Nunito Sans";
+	font-size: 20px;
 }
 
 [class*="__container"] {
-	max-width: 1310px;
+	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 .wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
 .page {
