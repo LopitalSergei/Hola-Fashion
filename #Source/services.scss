@@ -1,0 +1,58 @@
+.page {
+	&__services {
+		padding-top: 82px;
+		padding-bottom: 89px;
+	}
+}
+.services {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__label {
+	}
+
+	&__title {
+		padding: 76px 0;
+		max-width: 750px;
+	}
+
+	&__body {
+		display: flex;
+		gap: 35px;
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+		background-color: #fae3d8;
+		border-radius: 20px;
+
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			background-color: #91916c;
+
+			transform: scale(1.05);
+			.services__name {
+				color: #fff;
+			}
+		}
+	}
+
+	&__image {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__name {
+		font-size: 24px;
+		line-height: 1.38;
+		// /* or 33px */
+
+		letter-spacing: 0.02em;
+		padding: 25px 30px 35px 30px;
+	}
+}
