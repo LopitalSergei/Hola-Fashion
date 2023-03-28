@@ -55,8 +55,11 @@ body {
 	/* or 67px */
 	letter-spacing: 0.02em;
 	color: #65653e;
-	width: 750px;
 	align-self: center;
+
+	@media (max-width: 479.98px) {
+		font-size: 34px;
+	}
 }
 
 // Шапка

@@ -4,6 +4,13 @@
 		padding-bottom: 70px;
 		background-color: #e1e1c2;
 	}
+
+	@media (max-width: 991.99px) {
+		&__product {
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+	}
 }
 
 .product {
@@ -15,10 +22,15 @@
 
 	&__label {
 		padding-bottom: 76px;
+		@media (max-width: 479.98px) {
+			padding-bottom: 46px;
+		}
 	}
 
 	&__title {
 		padding-bottom: 51px;
+
+		max-width: 750px;
 	}
 
 	&__slider {
@@ -26,13 +38,11 @@
 }
 
 .slider {
-	// min-width: 0;
 	position: relative;
-	padding: 0 160px;
 	&__item {
 		img {
-			width: 800px;
-			height: 432px;
+			max-width: 800px;
+			max-height: 432px;
 			object-fit: cover;
 			overflow: hidden;
 			border-radius: 20px;
@@ -66,6 +76,47 @@
 		&.slick-next {
 			background: url("../img/icon/arrow-right.svg") 0 0 / 100% no-repeat;
 			right: 0;
+		}
+	}
+
+	@media (max-width: 991.99px) {
+		&__item {
+			img {
+				max-width: 600px;
+				max-height: 332px;
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		&__item {
+			img {
+				max-width: 500px;
+				max-height: 270px;
+			}
+		}
+	}
+
+	@media (max-width: 535px) {
+		&__item {
+			img {
+				max-width: 400px;
+				max-height: 200px;
+			}
+		}
+
+		.slick-arrow {
+			width: 38px;
+			height: 38px;
+		}
+	}
+
+	@media (max-width: 405px) {
+		&__item {
+			img {
+				max-width: 300px;
+				max-height: 150px;
+			}
 		}
 	}
 }

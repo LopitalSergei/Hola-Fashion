@@ -8,5 +8,9 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
-	$('.slider').slick();
+	$('.slider').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
+	});
+
 })
