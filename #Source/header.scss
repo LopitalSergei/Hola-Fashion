@@ -31,6 +31,8 @@
 			left: 0;
 			background-color: #ffefe7;
 			transition: all 0.3s ease 0s;
+
+			z-index: 9;
 			&.active {
 				top: 0;
 			}
@@ -51,6 +53,7 @@
 				width: 100%;
 				height: 2px;
 				background-color: #000;
+				z-index: 10;
 				transition: all 0.3s ease 0s;
 			}
 

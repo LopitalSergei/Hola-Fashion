@@ -11,25 +11,25 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header id="home" class="header">
 			<div class="header__container">
 				<a href="" class="header__logo">Hola Fashion</a>
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="" class="menu__link">Home</a>
+							<a href="#home" class="menu__link">Home</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Product</a>
+							<a href="#product" class="menu__link">Product</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Services</a>
+							<a href="#services" class="menu__link">Services</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Blog</a>
+							<a href="#blog" class="menu__link">Blog</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link">Contact Us</a>
+							<a href="#contact" class="menu__link">Contact Us</a>
 						</li>
 					</ul>
 				</nav>
@@ -54,17 +54,48 @@
 								offer
 								clothes from top brands</div>
 						</div>
-						<form action="" class="main__form">
-							<input class="main__input" type="email" placeholder="Email">
-							<button class="main__button">SHOP NOW</button>
+						<form action="#" method="get" class="main__form">
+							<input class="main__input" type="email" name="email" placeholder="Email">
+							<button type="submit" class="main__button">SHOP NOW</button>
 						</form>
+					</div>
+				</div>
+			</section>
+			<section id="product" class="page__product product">
+				<div class="product__container">
+					<div class="product__label label">PRODUCT</div>
+					<h2 class="product__title title">Hola Fashion - Newest Designers, Lowest Prices</h2>
+					<div class="product__slider slider">
+						<div class="slider__item">
+							<img src="img/product/1.jpg" alt="">
+							<p class="slider__item-text">The World's Most Famous Street Style Bloggers</p>
+						</div>
+						<div class="slider__item">
+							<img src="img/product/2.jpg" alt="">
+							<p class="slider__item-text">Lorem ipsum dolor sit amet.</p>
+						</div>
+						<div class="slider__item">
+							<img src="img/product/3.jpg" alt="">
+							<p class="slider__item-text">Lorem ipsum dolor sit.</p>
+						</div>
+						<div class="slider__item">
+							<img src="img/product/4.jpg" alt="">
+							<p class="slider__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+						</div>
+						<div class="slider__item">
+							<img src="img/product/5.jpg" alt="">
+							<p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
 </html>
+
+<!-- Сделать бургер на всей странице и выключение его по клику и лок скрола при открытии бургера -->

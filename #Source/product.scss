@@ -1,0 +1,80 @@
+.page {
+	&__product {
+		padding-top: 120px;
+		padding-bottom: 70px;
+		background-color: #e1e1c2;
+	}
+}
+
+.product {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__label {
+		padding-bottom: 76px;
+	}
+
+	&__title {
+		padding-bottom: 51px;
+	}
+
+	&__slider {
+	}
+}
+
+.slider {
+	// min-width: 0;
+	position: relative;
+	padding: 0 160px;
+	&__item {
+		img {
+			width: 800px;
+			height: 432px;
+			object-fit: cover;
+			overflow: hidden;
+			border-radius: 20px;
+		}
+	}
+
+	&__item-text {
+		font-weight: 700;
+		line-height: 1.39;
+		/* or 28px */
+		letter-spacing: 0.02em;
+		color: #333333;
+		padding-top: 45px;
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin-top: calc(-29px - 36px);
+		z-index: 1;
+		font-size: 0;
+
+		width: 58px;
+		height: 58px;
+
+		&.slick-prev {
+			background: url("../img/icon/arrow-left.svg") 0 0 / 100% no-repeat;
+			left: 0;
+		}
+
+		&.slick-next {
+			background: url("../img/icon/arrow-right.svg") 0 0 / 100% no-repeat;
+			right: 0;
+		}
+	}
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+}

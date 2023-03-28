@@ -2,7 +2,6 @@
 @import "nullstyle.scss";
 
 // Шрифты
-@import "fonts.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap");
 
 body {
@@ -27,11 +26,41 @@ body {
 	flex: 1 1 auto;
 }
 
+.label {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.39;
+	/* or 44px */
+	letter-spacing: 0.03em;
+	color: #91916c;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 68px;
+		left: calc(50% - 144px);
+		width: 288px;
+		height: 3px;
+		background-color: #91916c;
+	}
+}
+
+.title {
+	font-family: "Playfair Display";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.39;
+	/* or 67px */
+	letter-spacing: 0.02em;
+	color: #65653e;
+	width: 750px;
+	align-self: center;
+}
+
 // Шапка
 @import "header.scss";
 
 // Контент
 @import "page.scss";
-
-// Footer
-@import "footer.scss";
