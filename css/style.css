@@ -555,6 +555,12 @@ body {
   padding-top: 82px;
   padding-bottom: 89px;
 }
+@media (max-width: 767.98px) {
+  .page__services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
 .services__container {
   display: -webkit-box;
@@ -569,6 +575,11 @@ body {
 .services__title {
   padding: 76px 0;
   max-width: 750px;
+}
+@media (max-width: 479.98px) {
+  .services__title {
+    padding: 46px 0;
+  }
 }
 .services__body {
   display: -webkit-box;
@@ -601,4 +612,12 @@ body {
   line-height: 1.38;
   letter-spacing: 0.02em;
   padding: 25px 30px 35px 30px;
+}
+@media (max-width: 767.98px) {
+  .services__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
