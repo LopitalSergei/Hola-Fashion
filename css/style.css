@@ -94,6 +94,10 @@ body {
   font-size: 20px;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 [class*=__container] {
   max-width: 1150px;
   margin: 0 auto;

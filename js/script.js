@@ -8,6 +8,12 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
+	$('.menu__link').click(function (event) {
+		$('.header__menu').removeClass('active');
+	})
+})
+
+$(document).ready(function () {
 	$('.slider').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
