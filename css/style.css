@@ -742,6 +742,12 @@ body {
   padding-top: 85px;
   padding-bottom: 82px;
 }
+@media (max-width: 767.98px) {
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .contact__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -758,6 +764,11 @@ body {
 .contact__label {
   padding: 0 0 109px 0;
 }
+@media (max-width: 767.98px) {
+  .contact__label {
+    padding: 0 0 60px 0;
+  }
+}
 .contact__block {
   background-color: #91916c;
 }
@@ -768,12 +779,15 @@ body {
 .contact__body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 418px 1fr;
-  grid-template-columns: 418px 1fr;
+  -ms-grid-columns: minmax(100px, 418px) 1fr;
+  grid-template-columns: minmax(100px, 418px) 1fr;
 }
 .contact__image {
   -webkit-transform: translateY(71px);
           transform: translateY(71px);
+}
+.contact__image img {
+  max-width: 100%;
 }
 .contact__form {
   display: -ms-grid;
@@ -782,7 +796,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 58px 27px 58px 27px 58px 27px 58px;
   grid-template-rows: repeat(4, 58px);
-  margin: 170px 32px 0 62px;
+  margin: 170px 32px 120px 62px;
   row-gap: 27px;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
@@ -821,7 +835,7 @@ body {
   -ms-grid-column: 3;
 }
 .contact__input {
-  background: rgba(225, 225, 194, 0.4);
+  background-color: rgba(225, 225, 194, 0.4);
   border-radius: 8px;
   font-family: "Nunito Sans";
   font-style: normal;
@@ -856,6 +870,31 @@ body {
   line-height: 1.35;
   /* or 27px */
   color: #ffffff;
+}
+@media (max-width: 991.98px) {
+  .contact__image {
+    display: none;
+  }
+  .contact__body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .contact__form {
+    margin: 60px 32px;
+  }
+}
+@media (max-width: 650px) {
+  .contact__form {
+    margin: 30px 0;
+    -ms-grid-rows: (58px)[5];
+    grid-template-rows: repeat(5, 58px);
+  }
+  .contact__form .inp-1 {
+    grid-column-start: span 2;
+  }
+  .contact__form .inp-2 {
+    grid-column-start: span 2;
+  }
 }
 
 .inp-3 {
