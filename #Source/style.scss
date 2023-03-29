@@ -47,6 +47,14 @@ body {
 	}
 }
 
+.label.label-orange {
+	color: #bd957e;
+	&::after {
+		content: "";
+		background-color: #bd957e;
+	}
+}
+
 .title {
 	font-family: "Playfair Display";
 	font-weight: 700;
@@ -64,6 +72,10 @@ body {
 
 .title.title-orange {
 	color: #e5a985;
+}
+
+.title.title-brown {
+	color: #795744;
 }
 
 // Шапка
