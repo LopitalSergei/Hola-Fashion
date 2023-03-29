@@ -1,0 +1,84 @@
+.contact {
+	padding-top: 85px;
+	padding-bottom: 82px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-self: center;
+	}
+
+	&__label {
+		padding: 0 0 109px 0;
+	}
+
+	&__block {
+		background-color: #91916c;
+	}
+
+	&__title {
+		max-width: 520px;
+		padding: 42px 0 20px 0;
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: 418px 1fr;
+	}
+
+	&__image {
+		transform: translateY(71px);
+	}
+
+	&__form {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 58px);
+
+		margin: 170px 32px 0 62px;
+		row-gap: 27px;
+		column-gap: 10px;
+	}
+
+	&__input {
+		background: rgba(225, 225, 194, 0.4);
+		border-radius: 8px;
+
+		font-family: "Nunito Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 135.5%;
+		color: #ffffff;
+		/* or 27px */
+		&::placeholder {
+			color: #ffffff;
+		}
+
+		padding-left: 25px;
+	}
+
+	&__button {
+		grid-column-start: span 2;
+		background: #e5a985;
+		border-radius: 8px;
+
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.35;
+		/* or 27px */
+
+		color: #ffffff;
+	}
+}
+
+.inp-1 {
+}
+.inp-2 {
+}
+.inp-3 {
+	grid-column-start: span 2;
+}
+.inp-4 {
+	grid-column-start: span 2;
+}
