@@ -870,6 +870,11 @@ body {
   line-height: 1.35;
   /* or 27px */
   color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.contact__button:hover {
+  background-color: #795744;
 }
 @media (max-width: 991.98px) {
   .contact__image {
